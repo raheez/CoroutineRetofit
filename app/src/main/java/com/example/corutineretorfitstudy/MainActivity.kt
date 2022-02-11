@@ -1,0 +1,23 @@
+package com.example.corutineretorfitstudy
+
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.example.corutineretorfitstudy.databinding.ActivityMainBinding
+import kotlin.math.min
+
+class MainActivity : AppCompatActivity() {
+    lateinit var mBinding :ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        mBinding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(mBinding.root)
+
+        mBinding?.singleTv?.setOnClickListener {
+            val mIntent = Intent(this,SingleApiCallActivity::class.java)
+            startActivity(mIntent)
+
+        }
+    }
+}
