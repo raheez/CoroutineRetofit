@@ -14,6 +14,11 @@
         <activity
             android:name=".SingleApiCall.SingleApiCallActivity"
             android:exported="true" />
+
+        <activity
+            android:name=".SereisApiCall.SeriesApiCallActivity"
+            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

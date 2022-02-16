@@ -18,5 +18,17 @@
         >
     </Button>
 
+    <Button
+        android:id="@+id/series_tv"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="series"
+        android:layout_below="@+id/single_tv"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        >
+    </Button>
+
 
 </RelativeLayout>

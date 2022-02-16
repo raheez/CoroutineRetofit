@@ -12,17 +12,16 @@ import kotlinx.coroutines.launch
 
 class SingleViewmodel:ViewModel() {
 
-
     private val _usersList = MutableLiveData<Resources<List<ApiUser>>>()
     init {
 
     }
 
     fun fetchUsers(){
-
         viewModelScope?.launch {
             _usersList.postValue(Resources.loading(null))
             val mList = RetrofitBuilder.apiService.getUsers()
+
             _usersList.postValue(Resources.successs(mList))
         }
     }

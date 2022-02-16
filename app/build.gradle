@@ -56,7 +56,6 @@ dependencies {
 
 
 
-    //viewModel
     // ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0-alpha02")
     // ViewModel utilities for Compose

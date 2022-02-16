@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
+import com.example.corutineretorfitstudy.SereisApiCall.SeriesApiCallActivity
 import com.example.corutineretorfitstudy.SingleApiCall.SingleApiCallActivity
 import com.example.corutineretorfitstudy.databinding.ActivityMainBinding
 
@@ -18,6 +19,12 @@ class MainActivity : AppCompatActivity() {
 
         mBinding?.singleTv?.setOnClickListener {
             val mIntent = Intent(this, SingleApiCallActivity::class.java)
+            startActivity(mIntent)
+
+        }
+
+        mBinding?.seriesTv?.setOnClickListener {
+            val mIntent = Intent(this, SeriesApiCallActivity::class.java)
             startActivity(mIntent)
 
         }

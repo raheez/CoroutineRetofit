@@ -12,9 +12,8 @@
         android:id="@+id/button_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="call single api"
         android:layout_centerInParent="true"
-        ></Button>
+        android:text="call sereis api"></Button>
 
 
     <TextView
