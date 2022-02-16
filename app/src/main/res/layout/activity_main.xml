@@ -7,15 +7,16 @@
     tools:context=".MainActivity"
     android:background="@color/black">
 
-    <TextView
+
+    <Button
         android:id="@+id/single_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Single"
+        android:text="single"
+        android:textAllCaps="false"
         android:layout_centerInParent="true"
-        android:padding="10dp"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        />
+        >
+    </Button>
+
 
 </RelativeLayout>
