@@ -24,6 +24,10 @@
             android:exported="true" />
 
         <activity
+            android:name=".Feature1.FeatureOneActivity"
+            android:exported="true" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

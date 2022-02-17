@@ -44,6 +44,17 @@
             android:textAllCaps="false"
             >
         </Button>
+
+        <Button
+            android:id="@+id/feature_1_tv"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="feature"
+            android:layout_below="@+id/series_tv"
+            android:textAllCaps="false"
+            >
+        </Button>
     </LinearLayout>
 
 </RelativeLayout>
