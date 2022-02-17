@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
+import com.example.corutineretorfitstudy.ParallelApiCall.ParallelApiCallActivity
 import com.example.corutineretorfitstudy.SereisApiCall.SeriesApiCallActivity
 import com.example.corutineretorfitstudy.SingleApiCall.SingleApiCallActivity
 import com.example.corutineretorfitstudy.databinding.ActivityMainBinding
@@ -26,7 +27,11 @@ class MainActivity : AppCompatActivity() {
         mBinding?.seriesTv?.setOnClickListener {
             val mIntent = Intent(this, SeriesApiCallActivity::class.java)
             startActivity(mIntent)
+        }
 
+        mBinding?.parallelTv?.setOnClickListener {
+            val mIntent = Intent(this, ParallelApiCallActivity::class.java)
+            startActivity(mIntent)
         }
     }
 }

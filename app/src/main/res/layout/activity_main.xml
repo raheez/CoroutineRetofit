@@ -8,27 +8,42 @@
     android:background="@color/black">
 
 
-    <Button
-        android:id="@+id/single_tv"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="single"
-        android:textAllCaps="false"
-        android:layout_centerInParent="true"
-        >
-    </Button>
+        android:layout_centerInParent="true">
 
-    <Button
-        android:id="@+id/series_tv"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="series"
-        android:layout_below="@+id/single_tv"
-        android:textAllCaps="false"
-        android:layout_centerInParent="true"
-        >
-    </Button>
+        <Button
+            android:id="@+id/single_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="single"
+            android:textAllCaps="false"
+            >
+        </Button>
 
+        <Button
+            android:id="@+id/series_tv"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="series"
+            android:layout_below="@+id/single_tv"
+            android:textAllCaps="false"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/parallel_tv"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="parallel"
+            android:layout_below="@+id/series_tv"
+            android:textAllCaps="false"
+            >
+        </Button>
+    </LinearLayout>
 
 </RelativeLayout>
